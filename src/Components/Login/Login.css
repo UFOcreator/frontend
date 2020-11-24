@@ -1,0 +1,23 @@
+.login{
+    margin: 25% 10vw;
+    text-align: center;
+    height: 100%;
+}
+
+.LoginForm{ 
+    border-radius: 5px;
+    padding: 15vh 2vw;
+    border: solid rgb(0,0,0);
+    height: 100%;
+}
+
+input[type=submit]{
+    background-color: rgb(211,16,30);
+    color: rgb(255,255,255);
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0,0,0);
+    padding: 1vh 5vw;
+}

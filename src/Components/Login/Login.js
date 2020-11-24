@@ -13,8 +13,15 @@ import React from 'react';
 function Login() {
     return (
         <div className="login">
-            <h1>Login</h1>
-            <form></form>
+            <form className="LoginForm">
+                <label for="User">Username</label>
+                <input type="text" id="User" name="User"></input>
+
+                <label for="Pass">Password</label>
+                <input type="text" id="Pass" name="User"></input>
+
+                <input type="submit" value="Login"></input>
+            </form>
         </div>
     );
 }

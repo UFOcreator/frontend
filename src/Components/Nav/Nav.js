@@ -6,17 +6,17 @@ function Nav() {
   return (
     <nav>
         <ul className="nav-links">
-          <Link to='/dailly'>
-            <li className="spacing"><span className="fas fa-clock"></span>DAILLY</li>
+          <Link to='/'>
+            <li className="spacing"><span className="fas fa-home"></span>Thuis</li>
           </Link>
           <Link to='/all'>
-            <li className="spacing">ALL</li>
+            <li className="spacing"><span className="fas fa-compass"></span>Ontdek</li>
           </Link>
           <Link to='/my'>
-            <li className="spacing">MY</li>
+            <li className="spacing"><span className="fas fa-user"></span>Volgend</li>
           </Link>
           <Link to='/donations'>
-            <li className="spacing">DONATIONS</li>
+            <li className="spacing"><span className="fas fa-users"></span>Profiel</li>
           </Link>
         </ul>
     </nav>

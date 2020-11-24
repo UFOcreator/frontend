@@ -1,0 +1,7 @@
+.my{
+    border: solid rgb(0,0,0);
+    width: 90%;
+    margin: 5% 5%;
+    max-height: 67vh;
+    overflow: scroll;
+}

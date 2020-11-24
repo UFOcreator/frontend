@@ -8,6 +8,7 @@ import Dailly from './Components/Dailly/Dailly';
 import All from './Components/All/All';
 import My from './Components/My/My';
 import Donations from './Components/Donations/Donations';
+import Home from './Components/Home/Home';
 
 
 function App() {
@@ -17,22 +18,16 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={Login} />
-          <Route path="/dailly" component={Dailly} />
-          <Route path="/all" component={All} />
-          <Route path="/my" component={My} />
-          <Route path="/donations" component={Donations} />
+          <Route path="/" exact component={Home} />
+          <Route path="/dailly" exact component={Dailly} />
+          <Route path="/all" exact component={All} />
+          <Route path="/my" exact component={My} />
+          <Route path="/donations" exact component={Donations} />
         </Switch>
         <Nav className="bar Bottom"/>
       </div>
     </Router>
   );
 }
-
-// const Home = () => (
-//   <div>
-//     <h1>Home Page</h1>
-//   </div>
-// )
 
 export default App;
