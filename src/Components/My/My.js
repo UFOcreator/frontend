@@ -1,12 +1,14 @@
 import './My.css';
-import React from 'react';
+import React, { Component } from 'react';
 
-function My() {
-  return (
-    <div className="my">
-     <h1> My </h1>
-    </div>
-  );
+class My extends Component {
+  render() {
+    return (
+      <div className="my">
+        <h1> My </h1>
+      </div>
+    );
+  }
 }
 
 export default My;
