@@ -14,15 +14,15 @@ nav{
     height: 10vh;
 }
 
-a{
+.nav-links > a{
     text-decoration: none;
     color: rgb(255,255,255);
+    text-align: center;
 }
 
 .nav-links{
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
     list-style: none;
     padding: 0;
@@ -30,4 +30,27 @@ a{
 
 .spacing{
     width: 100%;
+}
+
+#whiteCircle{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(255,255,255);
+    margin-bottom: 10vh;
+}
+
+#newButton{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0,0,0);
+    vertical-align: middle;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.8);
+}
+
+#newButton > .fa-plus{
+    color: rgb(255,255,255);
+    margin: 25%;
 }

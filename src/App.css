@@ -51,3 +51,11 @@ main {
 .Side{
   margin-top: 5%;
 }
+
+.switch-wrapper {
+  position: relative;
+}
+ 
+.switch-wrapper > div {
+  position: absolute;
+}
