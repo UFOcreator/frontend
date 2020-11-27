@@ -1,12 +1,8 @@
 #imageDailly{
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
-<<<<<<< HEAD
     height: 25.5%;
     object-fit: cover;
-=======
-    height: 21.5%;
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }
 
 .dailly{
@@ -22,11 +18,7 @@
 .content{
     margin: 2%;
     display: flex;
-<<<<<<< HEAD
     height: 63%;
-=======
-    height: 68.5%;
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }
 
 .lowBar{
@@ -62,11 +54,7 @@
 
 .challenges > ul{
     text-align: left;
-<<<<<<< HEAD
     padding: 0 0 10vh 0;
-=======
-    padding: 0;
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }
 
 .challengesLeft{
@@ -76,7 +64,6 @@
 
 .progressRight{
     flex: 50%;
-<<<<<<< HEAD
     margin-top: 20%;
     max-width: 50%;
     text-align: center;
@@ -88,9 +75,3 @@
 }
     
 
-=======
-    margin-top: 50%;
-    max-width: 50%;
-    text-align: center;
-}
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78

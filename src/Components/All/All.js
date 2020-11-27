@@ -1,6 +1,5 @@
 import './All.css';
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 
 class All extends Component {
@@ -21,18 +20,6 @@ class All extends Component {
         
     );
   }
-=======
-
-class All extends Component {
-  render() {
-    return (
-      <div className="all">
-        <h1>All</h1>
-      </div>
-    );
-  }
-
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }
 
 export default All;

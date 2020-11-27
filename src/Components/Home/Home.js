@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom';
 class Home extends Component {
   render() {
     return (
-<<<<<<< HEAD
-
-=======
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
       <div className="home">
         <h1>Home</h1>
         <ul className="temp">

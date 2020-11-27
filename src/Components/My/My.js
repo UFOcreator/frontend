@@ -1,6 +1,5 @@
 import './My.css';
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 
 const myChallenges =
@@ -120,14 +119,6 @@ class My extends Component {
             <i className="fas fa-chevron-up"></i>
           </div>
         </Link>
-=======
-
-class My extends Component {
-  render() {
-    return (
-      <div className="my">
-        <h1> My </h1>
->>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
       </div>
     );
   }
