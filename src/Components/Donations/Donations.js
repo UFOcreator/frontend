@@ -1,10 +1,14 @@
 import './Donations.css';
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 
 const donatedChallenges =
   [
     '30 Push ups',
+<<<<<<< HEAD
     'Daily Challenge  25/11/20',
     '5 min. Planking',
     '30 Leg raises',
@@ -131,10 +135,23 @@ class Donations extends Component {
       }
     }
 
+=======
+    '6000 Steps',
+    '5 min. Planking',
+    '30 Leg raises',
+    '10 min. Hardlopen',
+    '5 km. Fietsen',
+    '15 Sit ups'
+  ]
+
+class Donations extends Component {
+  render() {
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
     var Ch;
     Ch = donatedChallenges.map((c) => {
       return (
         <div>
+<<<<<<< HEAD
           <button id={c} className="lists" onClick={rando} value={c} >{c}</button>
           <div className="hider" id={"box" + c}>
             <div className="left">
@@ -154,12 +171,16 @@ class Donations extends Component {
               </div>
             </div>
           </div>
+=======
+          <li className="lists">{c}</li>
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
         </div>
       );
     })
     return (
       <div className="donations">
         <img src="Images/DonationBanner.jpeg" alt="DonationBanner" id="imageDonation"></img>
+<<<<<<< HEAD
         <div className="contentFull">
           <div className="challengesFull">
             <ul>
@@ -173,6 +194,11 @@ class Donations extends Component {
             <i className="fas fa-chevron-up"></i>
           </div>
         </Link>
+=======
+        <ul>
+          {Ch}
+        </ul>
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
       </div>
     );
   }

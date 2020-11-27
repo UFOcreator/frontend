@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #imageAll{
     width: 100%;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
@@ -7,12 +8,17 @@
 
 .all{
     box-shadow: 0px 4px 8px rgba(0,0,0,0.8);
+=======
+.all{
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
     width: 90%;
     margin: 5% 5%;
     max-height: 75vh;
     overflow: scroll;
     height: 75vh;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 }
 
 .content{
@@ -46,4 +52,6 @@
     margin: 5px 0 0 5px;
     width: 50%;
     color: rgb(0,0,0);
+=======
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }

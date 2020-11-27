@@ -13,6 +13,7 @@
     overflow: scroll;
     height: 75vh;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 }
 
 .contentFull{
@@ -105,4 +106,6 @@
 
 .rightMy{
     flex: 50%;
+=======
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
 }

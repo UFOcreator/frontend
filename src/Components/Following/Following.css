@@ -1,5 +1,9 @@
 .following{
+<<<<<<< HEAD
     box-shadow: 0px 4px 8px rgba(0,0,0,0.8);
+=======
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+>>>>>>> e3bdf968aa7408ebe70af8cbed48c8c0340fce78
     width: 90%;
     margin: 5% 5%;
     max-height: 75vh;
