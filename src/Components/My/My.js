@@ -53,15 +53,51 @@ const date = [
 
 class My extends Component {
   render() {
+    
+    var addAnother;
+    addAnother = (e) => {
+      
+      var newOne = document.getElementById(e.target.value);
+      if (newOne.classList.contains("Added")){
+        alert("Deze challenge is al actief");
+      }
+      else{
+      var today = new Date();
+      var dd = today.getDate();
 
-    // var filler;
-    // filler = (z) => {
-    // const dlength = date.length;
-    // const randomDates = Math.floor(Math.random() * dlength);
-    // var randomDateRight = date[randomDates];
-    // var fillDates = document.getElementById("randomDate" + e.target.value);
-    // fillDates.innerText = randomDateRight;
-    // }
+      var mm = today.getMonth() + 1;
+      var yyyy = today.getFullYear();
+      if (dd < 10) {
+        dd = '0' + dd;
+      }
+
+      if (mm < 10) {
+        mm = '0' + mm;
+      }
+      today = dd + '/' + mm + '/' + yyyy;
+
+      newOne.classList.add("Added");
+
+      // add another row with todays date //
+      var day = document.createElement("li");
+      day.innerText = today;
+      document.getElementById("dateDone" + e.target.value).appendChild(day);
+
+      // add another row with 0 euro donation //
+      var zero = document.createElement("li");
+      zero.innerText = "€ 00.00 ";
+      document.getElementById("donation" + e.target.value).appendChild(zero);
+
+      // add another row with active //
+      var active = document.createElement("li");
+      active.innerText = "Actief: ";
+      document.getElementById("complete" + e.target.value).appendChild(active);
+      }
+      
+
+
+
+    }
 
     var info;
     info = (e) => {
@@ -88,7 +124,7 @@ class My extends Component {
           for (i = 0; i < random; i++) {
             // Create random amount of times completed //
             var complete = document.createElement("li");
-            complete.innerText = "Completed: ";
+            complete.innerText = "Gehaald: ";
             document.getElementById("complete" + e.target.value).appendChild(complete);
 
             // Select random Donations //
@@ -121,13 +157,14 @@ class My extends Component {
               </ul>
             </div>
             <div className="middleMy">
-            <ul className="fillBox" id={"dateDone" + c}>
+              <ul className="fillBox" id={"dateDone" + c}>
               </ul>
             </div>
             <div className="rightMy">
               <ul className="fillBox" id={"donation" + c}>
               </ul>
             </div>
+            <button className="buttonCenter" value={c} onClick={addAnother}>Opnieuw</button>
           </div>
         </div>
       );
