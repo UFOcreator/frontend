@@ -6,21 +6,47 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <h1>Home</h1>
-        <ul className="temp">
+        <div className="banner">
           <Link to='/dailly'>
-            <li className="tempOne">Daily</li>
+          <img src="Images/DaillyBanner.jpeg" alt="DaillyBanner" className="imageHome"></img>
+          <div className="lowerBar">
+            <h3 className="tempOne">Daily Challenges</h3>
+            <i className="fas fa-chevron-down"></i>
+          </div>
           </Link>
+        </div>
+
+        <div className="banner">
           <Link to='/my'>
-            <li className="tempOne">My</li>
+          <img src="Images/MyBanner.jpeg" alt="myBanner" className="imageHome"></img>
+          <div className="lowerBar">
+            <h3 className="tempOne">My Challenges</h3>
+            <i className="fas fa-chevron-down"></i>
+          </div>
           </Link>
+        </div>
+
+        <div className="banner">
           <Link to='/all'>
-            <li className="tempOne">All</li>
+            <img src="Images/AllBanner.png" alt="AllBanner" className="imageHome"></img>
+            <div className="lowerBar">
+              <h3 className="tempOne">All Challenges</h3>
+              <i className="fas fa-chevron-down"></i>
+            </div>
+            
           </Link>
+        </div>
+
+        <div className="banner">
           <Link to='/donations'>
-            <li className="tempOne">Donations</li>
+            <img src="Images/DonationBanner.jpeg" alt="DonationBanner" className="imageHome"></img>
+            <div className="lowerBar">
+              <h3 className="tempOne">Donations</h3>
+              <i className="fas fa-chevron-down"></i>
+            </div>
           </Link>
-        </ul>
+        </div>
+
       </div>
     );
   }
