@@ -59,7 +59,7 @@
 }
 
 .challengesFull > ul > div{
-    box-shadow: 0px 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
     margin-bottom: 2%;
     padding: 2.5vh 0;
     max-height: 50vh;
@@ -100,9 +100,26 @@
 }
 
 .leftMy{
-    flex: 50%;
+    flex-grow: 1;
+}
+
+.middleMy{
+    flex-grow: 2;
 }
 
 .rightMy{
-    flex: 50%;
+    flex-grow: 2;
+}
+
+.buttonCenter{
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(211,16,30);
+    color: rgb(255,255,255);
+    outline: none;
+    margin: auto;
+    height: 6vh;
+    font-size: 20px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.8);
+    margin-bottom: 2vh;
 }
