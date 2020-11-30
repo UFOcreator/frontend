@@ -1,29 +1,42 @@
 import './Login.css';
 import React from 'react';
+import fire from './fire.js'; 
+import Home from './Components/Home/Home';
+import Loginscreen from './Loginscreen';
+import 'firebase/auth';
+import 'firebase/firestore';
 
-// class Filler extends React.Component {
-//     constructor(props){
-//         super(props);
-//         this.state = {
-//             value: 'E'
-//         }
-//     }
-// }
+class App extends Component{
+  constructor(props)
+  {
+    super(props);
+    this.state={
+      user : {}
+    }
+  }
+  componentDidMount()
+  {
+    this.authListener();
+  }
+  authListener(){
+    fire.auth().onAuthStateChanged((user)=>{
+      if(user)
+      {
+        this.setState({user})
+      }
+      else{
+        this.setState({user : null})
+      }
+    })
+  }
 
-function Login() {
+  render(){
     return (
-        <div className="login">
-            <form className="LoginForm">
-                <label for="User">Username</label>
-                <input type="text" id="User" name="User"></input>
-
-                <label for="Pass">Password</label>
-                <input type="text" id="Pass" name="User"></input>
-
-                <input type="submit" value="Login"></input>
-            </form>
-        </div>
+      <div className="App">
+        {this.state.user ? (<Home/>) : (<Login/>)}
+      </div>
     );
+  }
 }
 
 export default Login;

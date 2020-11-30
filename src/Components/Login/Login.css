@@ -1,23 +1,77 @@
-.login{
-    margin: 25% 10vw;
-    text-align: center;
-    height: 100%;
+
+
+h1, h2, h3, h4, h5, h6, a {
+  margin:0; padding:0;
 }
 
-.LoginForm{ 
-    border-radius: 5px;
-    padding: 15vh 2vw;
-    border: solid rgb(0,0,0);
-    height: 100%;
+
+
+.login-form h3 {
+  text-align:left;
+  margin-left:40px;
+  color:#fff;
+}
+.login-form {
+  box-sizing:border-box;
+  padding-top:15px;
+	padding-bottom:10%;
+  margin:5% auto;
+  text-align:center;
+}
+.login input[type="email"],
+.login input[type="password"] {
+  max-width:400px;
+	width: 80%;
+  line-height:3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin:1em 2em;
+  border-radius:5px;
+  border:2px solid #000000;
+  outline:none;
+  padding-left:10px;
+}
+.login-form button {
+  height:30px;
+  width:100px;
+  background:#D3101E;
+  border:1px solid #D3101E;
+  border-radius:20px;
+  color: slategrey;
+  text-transform:uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  cursor:pointer;
+  position: relative;
+  color: white;
+  margin: 10px;
+}
+.sign-up{
+  color:#f2f2f2;
+  margin-left:-70%;
+  cursor:pointer;
+  text-decoration:underline;
+}
+.no-access {
+  color:#E86850;
+  margin:20px 0px 20px -57%;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.try-again {
+  color:#f2f2f2;
+  text-decoration:underline;
+  cursor:pointer;
 }
 
-input[type=submit]{
-    background-color: rgb(211,16,30);
-    color: rgb(255,255,255);
-    outline: none;
-    border: none;
-    font-size: 25px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgb(0,0,0);
-    padding: 1vh 5vw;
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px){
+  .login-form h3 {
+    text-align:center;
+    margin:0;
+  }
+  .sign-up, .no-access {
+    margin:10px 0;
+  }
+  button {
+    margin-bottom:10px;
+  }
 }

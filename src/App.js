@@ -12,15 +12,20 @@ import Discover from './Components/Discover/Discover';
 import Following from './Components/Following/Following';
 import Profile from './Components/Profile/Profile';
 import New from './Components/New/New';
+import fire from './Components/Login/fire';
 
+import Login from './Components/Login/Loginscreen';
 
 function App() {
   return (
+    
+    
     <Router>
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Login} />
+          <Route path="/home" exact component={Home} />
           <Route path="/discover" exact component={Discover} />
           <Route path="/following" exact component={Following} />
           <Route path="/profile" exact component={Profile} />
