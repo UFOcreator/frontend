@@ -4,25 +4,26 @@ import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
+
     return (
       <div className="home">
         <div className="banner">
           <Link to='/dailly'>
-          <img src="Images/DaillyBanner.jpeg" alt="DaillyBanner" className="imageHome"></img>
-          <div className="lowerBar">
-            <h3 className="tempOne">Daily Challenges</h3>
-            <i className="fas fa-chevron-down"></i>
-          </div>
+            <img src="Images/DaillyBanner.jpeg" alt="DaillyBanner" className="imageHome"></img>
+            <div className="lowerBar">
+              <h3 className="tempOne">Daily Challenges</h3>
+              <i className="fas fa-chevron-down"></i>
+            </div>
           </Link>
         </div>
 
         <div className="banner">
           <Link to='/my'>
-          <img src="Images/MyBanner.jpeg" alt="myBanner" className="imageHome"></img>
-          <div className="lowerBar">
-            <h3 className="tempOne">My Challenges</h3>
-            <i className="fas fa-chevron-down"></i>
-          </div>
+            <img src="Images/MyBanner.jpeg" alt="myBanner" className="imageHome"></img>
+            <div className="lowerBar">
+              <h3 className="tempOne">My Challenges</h3>
+              <i className="fas fa-chevron-down"></i>
+            </div>
           </Link>
         </div>
 
@@ -33,11 +34,11 @@ class Home extends Component {
               <h3 className="tempOne">All Challenges</h3>
               <i className="fas fa-chevron-down"></i>
             </div>
-            
+
           </Link>
         </div>
 
-        <div className="banner">
+        <div className="banner Donations">
           <Link to='/donations'>
             <img src="Images/DonationBanner.jpeg" alt="DonationBanner" className="imageHome"></img>
             <div className="lowerBar">
@@ -46,7 +47,10 @@ class Home extends Component {
             </div>
           </Link>
         </div>
-
+        {/* <div className="seasons">
+          <h3>SeizoensChallenges</h3>
+          <p id="TimerW"></p>
+        </div> */}
       </div>
     );
   }
