@@ -1,5 +1,5 @@
 .login{
-    margin: 25% 10vw;
+    width: 100%;
     text-align: center;
     height: 100%;
 }
@@ -20,4 +20,11 @@ input[type=submit]{
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(0,0,0);
     padding: 1vh 5vw;
+}
+
+.top{
+    background-color: rgb(211,16,30);
+    height: 20vh;
+    width: 100%;
+    z-index: 5;
 }

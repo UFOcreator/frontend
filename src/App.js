@@ -34,7 +34,7 @@ function App() {
           <Route path="/profile" exact component={Profile} />
           <Route path="/new" exact component={New} />
         </Switch>
-        <Nav className="bar Bottom"/>
+        <Nav className="bar Bottom" />
       </div>
     </Router>
   );

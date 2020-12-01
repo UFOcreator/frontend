@@ -6,7 +6,9 @@ class Discover extends Component {
     return (
 
       <div className="discover">
-        <h1>Discover</h1>
+        <div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
+          <div class="ticker-item">Coming soon!</div>
+        </div></div></div>
       </div>
     );
   }

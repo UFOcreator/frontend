@@ -1,29 +1,29 @@
 import './Login.css';
-import React from 'react';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-// class Filler extends React.Component {
-//     constructor(props){
-//         super(props);
-//         this.state = {
-//             value: 'E'
-//         }
-//     }
-// }
 
-function Login() {
-    return (
-        <div className="login">
-            <form className="LoginForm">
-                <label for="User">Username</label>
-                <input type="text" id="User" name="User"></input>
 
-                <label for="Pass">Password</label>
-                <input type="text" id="Pass" name="User"></input>
+class Login extends Component {
+    render() {
+        
+        return (
+            <div className="login">
+                <div className="top">
+                    
+                </div>
+                <div className="main">
+                    <Link to='/home'>
+                        <button>Inloggen</button>
+                    </Link>
+                </div>
+                <div className="foot">
 
-                <input type="submit" value="Login"></input>
-            </form>
-        </div>
-    );
+                </div>
+            </div>
+        );
+    }
+
 }
 
 export default Login;
