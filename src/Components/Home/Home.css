@@ -1,0 +1,60 @@
+.home{
+    overflow-y: scroll;
+}
+
+.banner{
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.8);
+    width: 90%;
+    margin: 5% 5%;
+    height: 17vh;
+    overflow: scroll;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    background-color: rgb(230,230,230);
+}
+
+a{
+    text-decoration: none;
+}
+
+.tempOne{
+    margin: 5px 0 0 5px;
+    width: 50%;
+    color: rgb(0,0,0);
+}
+
+.imageHome{
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+    height: 12vh;
+    object-fit: cover;
+}
+
+.lowerBar{
+    display: flex;
+}
+
+.fa-chevron-down{
+    color: rgb(0,0,0);
+    width: 50%;
+    text-align: right;
+    padding-top: 5px;
+    height: 100%;
+}
+
+.fa-chevron-down::before{
+    padding-right:15px;
+}
+
+#TimerW{
+    color: rgb(255,255,255);
+    margin: auto;
+}
+
+.seasons{
+    width: 100%;
+    background-color: rgb(211,16,30);
+    text-align: center;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+}
