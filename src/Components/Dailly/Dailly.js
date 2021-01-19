@@ -38,7 +38,7 @@ class Dailly extends Component {
     }
     var percentageTest = Math.round((checkedCount / length) * 100);
     console.log(percentage);
-    this.setState({ percentage: percentageTest })
+    this.setState({ percentage: percentageTest });
   }
 
   render() {
